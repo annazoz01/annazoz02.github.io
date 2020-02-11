@@ -3,8 +3,25 @@
 <head>
   <title>CIS-128-OLH-CRN43884</title>
   <link rel="stylesheet" type="text/css" href="hw1.css">
-</head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script> 
+  $(document).ready(function(){
+   $("button").click(function(){
+   	$("h1").animate({fontSize: '3em'},"slow");
+   	$("h1").animate({fontSize: '2em'},"slow");
+   });
+   
+   $("button").click(function(){
+  $("h1").css("color", "blue");
+   });
 
+   $("button").click(function(){
+  $("img").css({border:'3px solid #f37736'});
+});
+
+});
+  </script>
+</head>
 
 
 <body>
@@ -33,6 +50,8 @@
 				<dd>This websites shows all of the tagsa that avilable in the HTML & CSS and attributes.Also, it shos some tutorials how to work with thoses languages and it have hostin guide.</dd>
 			</li>
 		</ul>
+		<div><button>Start animation</button>
+		</div>
 	</div>
 
 </body>
